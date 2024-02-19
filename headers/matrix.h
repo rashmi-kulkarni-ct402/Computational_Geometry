@@ -6,12 +6,12 @@ namespace LinearAlgebra
     {
     public:
         Matrix() = default;
-        Matrix(double a, double b, double c, double d, double e, double f, double g, double h, double i);
+        Matrix(double inA, double inB, double inC, double inD, double inE, double inF, double inG, double inH, double inI);
         ~Matrix() = default;
 
-        double element(int row, int col) const;
+        double element(int inRow, int inCol) const;
 
     private:
-        double matrix[3][3];
+        double mMatrix[3][3];
     };
 }
