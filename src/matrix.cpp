@@ -1,20 +1,20 @@
 #include "../headers/Matrix.h"
 #include <iostream>
 
-LinearAlgebra::Matrix::Matrix(double a, double b, double c, double d, double e, double f, double g, double h, double i)
+LinearAlgebra::Matrix::Matrix(double inA, double inB, double inC, double inD, double inE, double inF, double inG, double inH, double inI)
 {
-    matrix[0][0] = a;
-    matrix[0][1] = b;
-    matrix[0][2] = c;
-    matrix[1][0] = d;
-    matrix[1][1] = e;
-    matrix[1][2] = f;
-    matrix[2][0] = g;
-    matrix[2][1] = h;
-    matrix[2][2] = i;
+    mMatrix[0][0] = inA;
+    mMatrix[0][1] = inB;
+    mMatrix[0][2] = inC;
+    mMatrix[1][0] = inD;
+    mMatrix[1][1] = inE;
+    mMatrix[1][2] = inF;
+    mMatrix[2][0] = inG;
+    mMatrix[2][1] = inH;
+    mMatrix[2][2] = inI;
 }
 
-double LinearAlgebra::Matrix::element(int row, int col) const
+double LinearAlgebra::Matrix::element(int inRow, int inCol) const
 {
-    return matrix[row][col];
+    return mMatrix[inRow][inCol];
 }
